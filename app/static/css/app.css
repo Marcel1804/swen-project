@@ -1,3 +1,31 @@
 body {
     padding-top: 5rem;
 }
+.colour{
+    background-color: green;
+}
+div.colour{
+    color: white;
+}
+.info{
+    color: gray;
+}
+.center{
+         text-align: center;
+}
+div.center{
+         padding-right: 10px;
+}
+.border{
+    border: black solid 1px;
+}
+.space { 
+    word-spacing: 30px;
+}
+.spacing { 
+    word-spacing: 65px;
+}
+.padding{
+    padding-top: 12px;
+}
+

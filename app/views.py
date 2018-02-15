@@ -7,7 +7,8 @@ This file creates your application.
 
 from app import app
 from flask import render_template, request, redirect, url_for, flash
-
+#!/usr/bin/python
+import datetime
 
 ###
 # Routing for your application.
@@ -53,6 +54,15 @@ def page_not_found(error):
     """Custom 404 page."""
     return render_template('404.html'), 404
 
+@app.route('/profile')
+def profile():
+    """ custom profile"""
+    return render_template('profile.html',date=format_date_joined())
+    
+def format_date_joined():
+    now= datetime.datetime.now()# today's date
+    date_joined=datetime.date(2018, 2, 7)# a specfic date
+    return date_joined
 
 if __name__ == '__main__':
     app.run(debug=True, host="0.0.0.0", port="8080")
