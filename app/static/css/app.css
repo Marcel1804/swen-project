@@ -17,7 +17,9 @@ div.center{
          padding-right: 10px;
 }
 .border{
-    border: black solid 1px;
+    border: 1px solid black;
+    border-radius: 12px;
+    
 }
 .space { 
     word-spacing: 30px;
@@ -27,5 +29,13 @@ div.center{
 }
 .padding{
     padding-top: 12px;
+}
+img {
+  border-radius: 50%;
+}
+button {
+    border-radius: 12px;
+    padding: 10px;
+    margin: 12px 6px;
 }
 

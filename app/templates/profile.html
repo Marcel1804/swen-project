@@ -3,7 +3,7 @@
 {% block main %}
     <div class="border">
     <div class="colour center">
-        <img src="app/static/pic.jpg" alt="profile picture" style:"width:200px;height:200px;"></img>
+        <img src="{{url_for('static',filename='./pic.jpg')}}" alt="profile picture" style="width:100px;height:100px;">
         <h5> Akeam Williams</h1>
         <h6>akeam.willimas@yahoo.com</h2>
         <h6>Kingston, Jamaica</h2>
@@ -13,14 +13,18 @@
     <div class="info  center">
         <p> I am third years student in department of commputing.My interests are game deveploment, web deveploment, Network security and ect...</p>
     </div>
+    
     <div class="center spacing padding" >
       7 100 250
     </div>
+    
     <div class=" info center space">
       Posts Following Followers
     </div>
+    
     <div class="center padding">
         <button class="colour"> Follow</button>
     </div>
-    </di>
+    
+    </div>
 {% endblock %}
